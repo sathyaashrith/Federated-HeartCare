@@ -73,15 +73,6 @@ Frontend sends patient data → Backend returns:
 
 ---
 
-## 🌐 API Endpoints
-Backend runs on:  
-📍 `http://127.0.0.1:5000`
-
-### ✅ Health Check
-GET `/`
-```json
-{ "message": "Federated HeartCare Backend Running ✅" }
-
-
 <img width="1917" height="945" alt="Screenshot 2026-01-13 180128" src="https://github.com/user-attachments/assets/4e245b33-bbe3-41a0-b4c6-08659dbe719a" />
 <img width="1913" height="948" alt="Screenshot 2026-01-13 180109" src="https://github.com/user-attachments/assets/7e5d03bd-c196-450e-b450-779aebba67e2" />
+
