@@ -1,0 +1,280 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top left, #1e293b, #0f172a);
+  color: white;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* =========================
+   APP LAYOUT (SIDEBAR + PAGE)
+========================= */
+.appLayout {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.mainContent {
+  flex: 1;
+  min-height: 100vh;
+  padding: 25px;
+}
+
+/* =========================
+   SIDEBAR DARK THEME
+========================= */
+.sidebar {
+  width: 260px;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0b1220, #111827);
+  padding: 25px 18px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.sidebarTop {
+  margin-bottom: 30px;
+}
+
+.sidebarLogo {
+  font-size: 24px;
+  font-weight: 900;
+  color: white;
+}
+
+.sidebarTag {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.65);
+  margin-top: 6px;
+}
+
+.sidebarNav {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.navItem {
+  text-decoration: none;
+  padding: 14px 16px;
+  border-radius: 14px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.05);
+  transition: 0.25s;
+}
+
+.navItem:hover {
+  transform: translateX(6px);
+  background: rgba(0, 255, 200, 0.12);
+  color: white;
+}
+
+.navItem.active {
+  background: linear-gradient(135deg, #00f5a0, #00d9f5);
+  color: black;
+  box-shadow: 0px 10px 25px rgba(0, 255, 200, 0.25);
+}
+
+.sidebarBottom {
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+.sidebarFooter {
+  font-size: 12px;
+  opacity: 0.6;
+  color: white;
+}
+
+/* =========================
+   PAGE COMMON STYLES
+========================= */
+.page {
+  min-height: 100vh;
+  width: 100%;
+  padding: 35px;
+  background: radial-gradient(circle at top left, #1e293b, #0f172a);
+  color: white;
+}
+
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.pageTitle {
+  font-size: 34px;
+  font-weight: 900;
+}
+
+.pageSubtitle {
+  opacity: 0.7;
+  margin-top: 6px;
+}
+
+.statusPill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.dotOnline {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #00ff99;
+  box-shadow: 0px 0px 12px rgba(0, 255, 153, 0.8);
+}
+
+/* =========================
+   CARD STYLES
+========================= */
+.card {
+  padding: 22px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+/* =========================
+   FORM STYLES
+========================= */
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+label {
+  font-size: 13px;
+  opacity: 0.85;
+  font-weight: 600;
+}
+
+input,
+select {
+  width: 100%;
+  margin-top: 6px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  outline: none;
+  background: rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+/* =========================
+   BUTTON STYLES
+========================= */
+.btnRow {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.btnPrimary {
+  padding: 12px 16px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  font-weight: 800;
+  background: linear-gradient(135deg, #00f5a0, #00d9f5);
+  color: black;
+}
+
+.btnGhost {
+  padding: 12px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.06);
+  color: white;
+}
+
+.btnDanger {
+  margin-top: 12px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  font-weight: 900;
+  background: linear-gradient(135deg, #ff4d4d, #ff0066);
+  color: white;
+}
+
+.resultBox {
+  opacity: 0.95;
+  line-height: 1.8;
+}
+
+/* =========================
+   PREDICT PAGE GRID
+========================= */
+.predictGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.rightCol {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 1000px) {
+  .predictGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    width: 210px;
+  }
+}
