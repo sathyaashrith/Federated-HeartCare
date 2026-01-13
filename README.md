@@ -38,90 +38,6 @@ Model → Local Device Training → Share Updates Only → Improved Model
 
 ---
 
-## 📂 Folder Structure (Final)
-{Federated-HeartCare/
-│
-├── backend/
-│ ├── app.py
-│ ├── train_model.py
-│ ├── requirements.txt
-│ ├── .env.example
-│ │
-│ ├── api/
-│ │ ├── init.py
-│ │ ├── predict.py
-│ │ ├── training.py
-│ │ └── health.py
-│ │
-│ ├── services/
-│ │ ├── prediction_service.py
-│ │ ├── evaluation_service.py
-│ │ └── model_swapper.py
-│ │
-│ ├── federated/
-│ │ ├── server.py
-│ │ ├── client.py
-│ │ └── aggregation.py
-│ │
-│ ├── drift/
-│ │ ├── detector.py
-│ │ └── adaptive_learning.py
-│ │
-│ ├── utils/
-│ │ ├── logger.py
-│ │ └── validators.py
-│ │
-│ ├── data/
-│ │ ├── raw/
-│ │ │ ├── heart.csv
-│ │ │ └── synthetic_data_generator.py
-│ │ └── processed/
-│ │
-│ ├── models/
-│ │ ├── model.pkl
-│ │ ├── scaler.pkl
-│ │ └── features.pkl
-│ │
-│ └── tests/
-│ ├── test_api.py
-│ └── test_privacy.py
-│
-├── frontend/
-│ ├── package.json
-│ ├── vite.config.js
-│ ├── index.html
-│ │
-│ └── src/
-│ ├── main.jsx
-│ ├── App.jsx
-│ ├── index.css
-│ │
-│ ├── pages/
-│ │ ├── Dashboard.jsx
-│ │ ├── Predict.jsx
-│ │ └── Landing.jsx
-│ │
-│ ├── components/
-│ │ ├── Sidebar.jsx
-│ │ ├── RiskGauge.jsx
-│ │ ├── RiskTrendChart.jsx
-│ │ └── RiskHistoryChart.jsx
-│ │
-│ └── api/
-│ ├── axiosConfig.js
-│ └── predictionAPI.js
-│
-├── docs/
-│ ├── ARCHITECTURE.md
-│ └── SETUP_GUIDE.md
-│
-├── .gitignore
-├── docker-compose.yml
-└── README.md
-}
-
----
-
 ## ⚙️ Tech Stack
 ### Frontend
 - React + Vite
@@ -166,3 +82,6 @@ GET `/`
 ```json
 { "message": "Federated HeartCare Backend Running ✅" }
 
+
+<img width="1917" height="945" alt="Screenshot 2026-01-13 180128" src="https://github.com/user-attachments/assets/4e245b33-bbe3-41a0-b4c6-08659dbe719a" />
+<img width="1913" height="948" alt="Screenshot 2026-01-13 180109" src="https://github.com/user-attachments/assets/7e5d03bd-c196-450e-b450-779aebba67e2" />
