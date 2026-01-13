@@ -39,7 +39,7 @@ Model → Local Device Training → Share Updates Only → Improved Model
 ---
 
 ## 📂 Folder Structure (Final)
-Federated-HeartCare/
+{Federated-HeartCare/
 │
 ├── backend/
 │ ├── app.py
@@ -118,7 +118,7 @@ Federated-HeartCare/
 ├── .gitignore
 ├── docker-compose.yml
 └── README.md
-
+}
 
 ---
 
@@ -165,3 +165,4 @@ Backend runs on:
 GET `/`
 ```json
 { "message": "Federated HeartCare Backend Running ✅" }
+
